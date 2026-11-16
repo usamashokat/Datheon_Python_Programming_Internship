@@ -60,5 +60,5 @@ Dathon_Python_Internship_Task1_Hangman/
 
 ---
 
-**Author:** [Your Name]  
+**Author:** Muhammad Usama Shokat  
 **Internship:** Dathon Python Programming Internship
