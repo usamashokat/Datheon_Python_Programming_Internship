@@ -1,64 +1,39 @@
-# Hangman Word Guessing Game (Console)
+# Task 4: Rule-Based Interactive Terminal Assistant / Chatbot
 
-**Dathon Python Internship — Task 1**  
-A beginner-friendly, interactive Hangman game built with Python.
+**Author:** Muhammad Usama Shokat
 
-## Features
+## Description
+A beginner-friendly Python terminal chatbot that recognizes greetings, answers questions from a JSON FAQ dataset, supports common alternate keywords, handles unknown questions, and exits with `bye`, `exit`, or `quit`.
 
-- Randomly selects a hidden word from a built-in English word list.
-- Displays the word as blanks and reveals correctly guessed letters.
-- Gives the player a maximum of **6 incorrect guesses**.
-- Shows ASCII gallows art as incorrect guesses are made.
-- Tracks previously guessed letters.
-- Does not deduct an attempt for a repeated guess.
-- Validates input so the player must enter one English letter at a time.
-- Displays a clear win/loss message and offers a replay option.
-- Uses only Python's standard library; no extra packages are required.
+## Files
+- `chatbot.py` — chatbot logic, input normalization, intent matching, fallback handling, and conversation loop.
+- `sample_faq.json` — the sample FAQ dataset provided with the task.
 
 ## Requirements
+- Python 3
+- No external packages are required.
 
-- Python 3.8 or newer
-- VS Code, PyCharm, or any terminal/command prompt
+## Run
+Open a terminal in this folder and execute:
 
-## How to Run
-
-1. Download or clone this repository.
-2. Open the project folder in VS Code or a terminal.
-3. Run:
-
-   ```bash
-   python hangman.py
-   ```
-
-   On some systems, use `python3 hangman.py` instead.
-
-## Project Structure
-
-```text
-Dathon_Python_Internship_Task1_Hangman/
-├── hangman.py
-└── README.md
+```bash
+python chatbot.py
 ```
 
-## How to Play
+## Example questions
+- `hello`
+- `What are your hours of operation?`
+- `How do I submit my internship project?`
+- `When will I receive my certificate?`
+- `quit`
 
-1. The game chooses a random word.
-2. Enter one English letter when prompted.
-3. Correct guesses reveal the matching letters.
-4. Incorrect guesses add one part to the ASCII gallows and reduce the remaining attempts.
-5. Guess the full word before reaching six incorrect guesses to win.
-6. Enter `y` to start another round or `n` to exit.
-
-## Concepts Demonstrated
-
-- Strings and string manipulation
-- Lists and random selection
-- Sets for tracking guessed letters
-- Loops and conditional statements
-- Functions and modular program structure
-- Input validation
+## Features
+1. Loads greeting phrases and FAQ answers from JSON.
+2. Normalizes user input using lowercase conversion and regular expressions.
+3. Matches multiple meaningful keywords and can return more than one matching FAQ answer.
+4. Provides helpful fallback responses for common related terms.
+5. Handles blank input and unrecognized questions.
+6. Supports clean exit commands: `bye`, `exit`, and `quit`.
 
 ---
-
-**Author:** Muhammad Usama Shokat  
-**Internship:** Dathon Python Programming Internship
+Created by **Muhammad Usama Shokat**.
